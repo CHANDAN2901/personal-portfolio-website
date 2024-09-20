@@ -1,23 +1,23 @@
-import styles from './HeroStyles.module.css';
-import heroImg from '../../assets/Design uten navn.png';
-import sun from '../../assets/sun.svg';
-import moon from '../../assets/moon.svg';
+import styles from "./HeroStyles.module.css";
+import heroImg from "../../assets/Design uten navn.png";
+import sun from "../../assets/sun.svg";
+import moon from "../../assets/moon.svg";
 import leetcodeDark from "../../assets/leetcodeDark.svg";
 import leetcodeLight from "../../assets/leetcodeLight.svg";
-import githubLight from '../../assets/github-light.svg';
-import githubDark from '../../assets/github-dark.svg';
-import linkedinLight from '../../assets/linkedin-light.svg';
-import linkedinDark from '../../assets/linkedin-dark.svg';
-import Resume from '../../assets/Resume.pdf';
-import { useTheme } from '../../common/ThemeContext';
+import githubLight from "../../assets/github-light.svg";
+import githubDark from "../../assets/github-dark.svg";
+import linkedinLight from "../../assets/linkedin-light.svg";
+import linkedinDark from "../../assets/linkedin-dark.svg";
+import Resume from "../../assets/Resume.pdf";
+import { useTheme } from "../../common/ThemeContext";
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();
 
-  const themeIcon = theme === 'light' ? sun : moon;
-  const leetcodeIcon = theme === 'light' ? leetcodeLight : leetcodeDark;
-  const githubIcon = theme === 'light' ? githubLight : githubDark;
-  const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
+  const themeIcon = theme === "light" ? sun : moon;
+  const leetcodeIcon = theme === "light" ? leetcodeLight : leetcodeDark;
+  const githubIcon = theme === "light" ? githubLight : githubDark;
+  const linkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
 
   return (
     <section id="hero" className={styles.container}>
@@ -53,8 +53,8 @@ function Hero() {
           </a>
         </span>
         <p className={styles.description}>
-          With a passion for developing modern web apps for commercial
-          businesses.
+          With a passion for building modern websites that cater to everyone,
+          from commercial businesses to individual users and communities.
         </p>
         <a href={Resume} download>
           <button className="hover">Resume</button>
