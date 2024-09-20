@@ -56,7 +56,7 @@ function Hero() {
           With a passion for building modern websites that cater to everyone,
           from commercial businesses to individual users and communities.
         </p>
-        <a href={Resume} download>
+        <a href={Resume} target="_blank">
           <button className="hover">Resume</button>
         </a>
       </div>
